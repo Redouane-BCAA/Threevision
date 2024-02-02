@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap");
 
 /********** BASE CSS **********/
 * {
@@ -137,12 +138,17 @@ header {
   .menu ul {
     flex-direction: column;
     position: absolute;
-    top: 74px;
+    top: 70px;
     left: -768px;
     width: 100%;
-    background-color: #fff;
+    background-color: var(--text-white);
+    /* A valider */
+    /* background: hsl(0, 0%, 100%, 0.8);
+    backdrop-filter: blur(17px);
+    -webkit-backdrop-filter: blur(17px); */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+    padding: 30px 0;
   }
 
   .menu ul.show {
@@ -191,7 +197,6 @@ header {
   height: 100%;
 }
 
-
 .hero_content h1 {
   font-size: var(--h2-font-size);
   font-weight: var(--font-bold);
@@ -233,9 +238,9 @@ header {
   font-weight: normal;
   line-height: 1.5rem;
 }
-.blue-btn{
+.blue-btn {
   text-transform: uppercase;
-  background:var(--gradient);
+  background: var(--gradient);
   color: var(--text-white);
   padding: 10px 20px;
   border: none;
@@ -255,7 +260,149 @@ header {
     text-align: center;
     width: auto;
   }
-  .btn-download-anazir a img{
+  .btn-download-anazir a img {
     width: 48%;
   }
+}
+
+/********** SECTION Mission **********/
+#mission {
+  position: relative;
+}
+.svg_container :nth-child(1) {
+  position: absolute;
+  top: 25%;
+  left: 1%;
+  z-index: -1;
+  width: 47px;
+  animation: infinite-rotate-right 6s linear infinite;
+  animation-delay: 1s;
+}
+.svg_container :nth-child(2) {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  z-index: -1;
+  width: 33px;
+  transform: rotate(65deg);
+  animation: infinite-rotate-left 6s linear infinite;
+  animation-delay: 3s;
+}
+.svg_container :nth-child(3) {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  z-index: -1;
+  width: 37px;
+  transform: rotate(180deg);
+  transform-origin: center;
+  animation: infinite-rotate-right 6s linear infinite;
+  animation-delay: 5s;
+}
+.svg_container :nth-child(4) {
+  position: absolute;
+  top: 23%;
+  left: 28%;
+  z-index: -1;
+  width: 33px;
+  transform: rotate(90deg);
+  animation: infinite-rotate-left 6s linear infinite;
+  animation-delay: 0s;
+}
+.svg_container :nth-child(5) {
+  position: absolute;
+  top: 47%;
+  right: 22%;
+  z-index: -1;
+  width: 37px;
+  transform: rotate(0deg);
+  animation: infinite-rotate-right 6s linear infinite;
+  animation-delay: 2s;
+}
+.svg_container :nth-child(6) {
+  position: absolute;
+  top: 18%;
+  left: 42%;
+  z-index: -1;
+  width: 37px;
+  transform: rotate(45deg);
+  animation: infinite-rotate-left 6s linear infinite;
+  animation-delay: 4s;
+}
+.svg_container :nth-child(7) {
+  position: absolute;
+  bottom: 10%;
+  right: 30%;
+  z-index: -1;
+  width: 55px;
+  transform: rotate(45deg);
+  animation: infinite-rotate-right 6s linear infinite;
+}
+@keyframes infinite-rotate-right {
+  0% {
+    transform: rotate(0deg) translateX(50px) translateY(-50px);
+  }
+  100% {
+    transform: rotate(360deg) translateX(50px) translateY(-50px);
+  }
+}
+@keyframes infinite-rotate-left {
+  0% {
+    transform: rotate(360deg) translateX(70px) translateY(-70px);
+  }
+  100% {
+    transform: rotate(0deg) translateX(70px) translateY(-70px);
+  }
+}
+.mission_container {
+  position: relative;
+}
+.mission_section.is-visible .mission_container::before {
+  content: url(../images/golem-dolmoss.webp);
+  position: absolute;
+  top: -130px;
+  right: -100px;
+  animation: arriveAndGrow 2s ease forwards;
+  animation-delay: 0s;
+  opacity: 0;
+}
+.mission_section.is-visible .mission_container::after {
+  content: url(../images/golem-horse.webp);
+  position: absolute;
+  top: -90px;
+  right: -170px;
+  animation: arriveAndGrow 2s ease forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+@keyframes arriveAndGrow {
+  0% {
+    transform: translateY(-20%) translateX(100%) scale(0.1); 
+  }
+  100% {
+    transform: translateY(0) translateX(0) scale(1);
+    opacity: 1; 
+  }
+}
+.mission_container h2 {
+  font-size: var(--h1-font-size);
+  font-family: var(--body-font);
+  width: 80%;
+  margin: 0 auto;
+  padding: 250px 0;
+  line-height: 5rem;
+}
+span.blue {
+  font-family: "Londrina Solid", sans-serif;
+  color: var(--text-white);
+  text-transform: uppercase;
+  background-color: var(--blue);
+  padding: 0 10px;
+}
+span.orange {
+  font-family: "Londrina Solid", sans-serif;
+  color: var(--text-white);
+  text-transform: uppercase;
+  background-color: #fe6b01;
+  padding: 0 10px;
 }

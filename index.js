@@ -14,3 +14,28 @@ document.querySelectorAll(".menu a").forEach(link => {
     burgerMenu.classList.remove("cross");
   });
 });
+
+
+// ************** SECTION MISSION ANIMATION *******************
+
+document.addEventListener("DOMContentLoaded", function() {
+  const missionSection = document.querySelector('.mission_section');
+  const options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.5
+  };
+
+  const handleIntersection = (entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  };
+
+  const observer = new IntersectionObserver(handleIntersection, options);
+
+  observer.observe(missionSection);
+});
