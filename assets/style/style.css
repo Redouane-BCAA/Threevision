@@ -77,10 +77,12 @@ h4 {
   margin: 0 auto;
   width: 100%;
   max-width: 1380px;
-
-  @media screen and (max-width: 1440px) {
+}
+@media screen and (max-width: 1500px) {
+  .ctn{
     max-width: 1040px;
-  }
+  } 
+    
 }
 
 /********** HEADER **********/
@@ -249,7 +251,7 @@ header {
   transition: all 0.3s ease;
 }
 /* SECTION HERO MEDIA QUERIES */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 775px) {
   #hero {
     height: 1000px;
   }
@@ -266,6 +268,9 @@ header {
 }
 
 /********** SECTION Mission **********/
+
+/***************Position et Animation golem section mission***************/
+
 #mission {
   position: relative;
 }
@@ -336,7 +341,7 @@ header {
   z-index: -1;
   width: 55px;
   transform: rotate(45deg);
-  animation: infinite-rotate-right 6s linear infinite;
+  animation: infinite-rotate-left 5s linear infinite;
 }
 @keyframes infinite-rotate-right {
   0% {
@@ -354,11 +359,16 @@ header {
     transform: rotate(0deg) translateX(70px) translateY(-70px);
   }
 }
+/***************Position et Animation golem section mission***************/
 .mission_container {
   position: relative;
 }
 .mission_section.is-visible .mission_container::before {
-  content: url(../images/golem-dolmoss.webp);
+  content: "";
+  background-image: url(../images/golem-dolmoss.webp); /* Utilise background-image au lieu de content */
+  background-size: cover;
+  height: 480px;
+  width: 480px;
   position: absolute;
   top: -130px;
   right: -100px;
@@ -367,7 +377,11 @@ header {
   opacity: 0;
 }
 .mission_section.is-visible .mission_container::after {
-  content: url(../images/golem-horse.webp);
+  content: "";
+  background-image: url(../images/golem-horse.webp); /* Utilise background-image au lieu de content */
+  background-size: cover;
+  height: 195px;
+  width: 195px;
   position: absolute;
   top: -90px;
   right: -170px;
@@ -375,6 +389,7 @@ header {
   animation-delay: 1s;
   opacity: 0;
 }
+
 @keyframes arriveAndGrow {
   0% {
     transform: translateY(-20%) translateX(100%) scale(0.1); 
@@ -384,6 +399,47 @@ header {
     opacity: 1; 
   }
 }
+@media screen and (max-width: 1731px) {
+  .mission_section.is-visible .mission_container::before{
+    width: 370px;
+    height: 370px;
+    right: 15%;
+  }
+  .mission_section.is-visible .mission_container::after{
+    width: 150px;
+    height: 150px;
+    right: 5%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .mission_section .mission_container h2 {
+    width: 100%;
+    line-height: 3rem;
+    padding: 150px 0;
+    font-size: 35px;
+  }
+  .mission_section.is-visible .mission_container::before{
+    width: 295px;
+    height: 295px;
+    right: 10%;
+    top: -12%;
+  }
+  .mission_section.is-visible .mission_container::after{
+    width: 118px;
+    height: 118px;
+    right: 5%;
+    top: -5%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mission_section.is-visible .mission_container::before{
+    display: none;
+  }
+  .mission_section.is-visible .mission_container::after{
+    display: none;
+  }
+}
+
 .mission_container h2 {
   font-size: var(--h1-font-size);
   font-family: var(--body-font);
