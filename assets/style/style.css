@@ -57,6 +57,7 @@ body {
 a {
   text-decoration: none;
   color: var(--text-dark);
+  font-family: 'Josefin sans', sans-serif;
 }
 
 ol,
@@ -115,6 +116,9 @@ header {
 }
 
 .menu ul li a:hover {
+  color: var(--blue);
+}
+.menu ul li a.active {
   color: var(--blue);
 }
 /* Burger BTN */
@@ -177,7 +181,8 @@ header {
   align-items: center;
   flex-direction: column;
   background: linear-gradient(270deg, rgba(0, 0, 0, 0) 34.27%, #000 100%),
-    url(../images/Helak-bg-1.webp) no-repeat center center/cover;
+    url(../images/bg-1.webp) no-repeat bottom center/cover;
+  background-position: center bottom 22%;
   height: 800px;
   margin-top: 74px;
   padding: 40px 0px;
@@ -259,7 +264,7 @@ header {
 /* SECTION HERO MEDIA QUERIES */
 @media screen and (max-width: 775px) {
   #hero {
-    height: 1000px;
+    height: max-content;
   }
   .anazir_link {
     align-items: center;
@@ -378,9 +383,9 @@ header {
   position: absolute;
   top: -130px;
   right: -100px;
-  animation: arriveAndGrow 2s ease forwards;
+  /* animation: arriveAndGrow 2s ease forwards;
   animation-delay: 0s;
-  opacity: 0;
+  opacity: 0; */
 }
 .mission_section.is-visible .mission_container::after {
   content: "";
@@ -391,9 +396,9 @@ header {
   position: absolute;
   top: -90px;
   right: -170px;
-  animation: arriveAndGrow 2s ease forwards;
+  /* animation: arriveAndGrow 2s ease forwards;
   animation-delay: 1s;
-  opacity: 0;
+  opacity: 0; */
 }
 
 @keyframes arriveAndGrow {
@@ -677,7 +682,7 @@ span.orange {
 }
 @media screen and (max-width: 1300px) {
   #vision {
-    background-size: 1739px;
+    background-size: cover;
     background-position: center 89%;
   }
   .vision_container {
@@ -700,6 +705,9 @@ span.orange {
   }
 }
 @media screen and (max-width: 768px) {
+  #vision {
+    height: 100svh;
+  }
   .vision_container {
     flex-direction: column;
     padding: 40px 20px;

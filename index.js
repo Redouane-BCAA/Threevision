@@ -15,6 +15,17 @@ document.querySelectorAll(".menu a").forEach(link => {
   });
 });
 
+// *** Lien actif ******
+const currentPathUrl = window.location.href;
+const menuLinks = document.querySelectorAll('.menu ul li a');
+
+menuLinks.forEach(link => {
+  if (link.href === currentPathUrl) {
+    link.classList.add('active');
+  }
+});
+
+
 
 // ************** SECTION MISSION ANIMATION *******************
 
