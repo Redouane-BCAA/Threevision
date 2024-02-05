@@ -33,14 +33,6 @@
 }
 
 /* Responsive typo for min 964px screen  */
-@media screen and (min-width: 964px) {
-  :root {
-    --h1-font-size: 4rem;
-    --h2-font-size: 3.1rem;
-    --h3-font-size: 1.25rem;
-    --normal-font-size: 1rem;
-  }
-}
 body {
   scroll-behavior: smooth;
   position: relative;
@@ -78,11 +70,6 @@ h4 {
   margin: 0 auto;
   width: 100%;
   max-width: 1380px;
-}
-@media screen and (max-width: 1500px) {
-  .ctn {
-    max-width: 1040px;
-  }
 }
 
 /********** HEADER **********/
@@ -139,40 +126,6 @@ header {
   transform: rotate(0deg);
 }
 /* HEADER NAVBAR MEDIA QUERIES */
-@media screen and (max-width: 768px) {
-  .menu ul {
-    flex-direction: column;
-    position: absolute;
-    top: 70px;
-    left: -768px;
-    width: 100%;
-    background-color: var(--text-white);
-    /* A valider */
-    /* background: hsl(0, 0%, 100%, 0.8);
-    backdrop-filter: blur(17px);
-    -webkit-backdrop-filter: blur(17px); */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    padding: 30px 0;
-  }
-
-  .menu ul.show {
-    left: 0;
-  }
-
-  .menu ul li {
-    margin: 10px 0;
-  }
-
-  .burger-menu {
-    display: block;
-    transition: transform 0.3s ease;
-  }
-
-  .burger-menu.cross {
-    transform: rotate(90deg);
-  }
-}
 
 /********** SECTION HERO **********/
 #hero {
@@ -259,23 +212,6 @@ header {
   transition: all 0.3s ease;
   background: #fe6b01;
   transform: scale(1.1);
-}
-
-/* SECTION HERO MEDIA QUERIES */
-@media screen and (max-width: 775px) {
-  #hero {
-    height: max-content;
-  }
-  .anazir_link {
-    align-items: center;
-  }
-  .anazir_link h1 {
-    text-align: center;
-    width: auto;
-  }
-  .btn-download-anazir a img {
-    width: 48%;
-  }
 }
 
 /********** SECTION Mission **********/
@@ -410,49 +346,6 @@ header {
     opacity: 1;
   }
 } */
-@media screen and (max-width: 1731px) {
-  .mission_section .mission_container h2 {
-    width: 90%;
-  }
-  .mission_section .mission_container::before {
-    width: 370px;
-    height: 370px;
-    right: 15%;
-  }
-  .mission_section .mission_container::after {
-    width: 150px;
-    height: 150px;
-    right: 5%;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .mission_section .mission_container h2 {
-    width: 100%;
-    line-height: 3rem;
-    padding: 150px 0;
-    font-size: 35px;
-  }
-  .mission_section .mission_container::before {
-    width: 295px;
-    height: 295px;
-    right: 10%;
-    top: -12%;
-  }
-  .mission_section .mission_container::after {
-    width: 118px;
-    height: 118px;
-    right: 5%;
-    top: -5%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .mission_section .mission_container::before {
-    display: none;
-  }
-  .mission_section .mission_container::after {
-    display: none;
-  }
-}
 
 .mission_container h2 {
   font-size: var(--h1-font-size);
@@ -666,64 +559,6 @@ span.orange {
   line-height: 1;
   padding-bottom: 15px;
 }
-@media screen and (max-width: 1500px) {
-  #vision {
-    height: 730px;
-  }
-  .vision_container {
-    padding: 250px 0;
-  }
-  .vision_container::before {
-    width: 340px;
-    height: 340px;
-    left: 3%;
-    bottom: 4%;
-  }
-}
-@media screen and (max-width: 1300px) {
-  #vision {
-    background-size: cover;
-    background-position: center 89%;
-  }
-  .vision_container {
-    padding: 196px 0;
-    width: 90%;
-  }
-  .vision_container::before {
-    width: 340px;
-    height: 340px;
-    left: 3%;
-    bottom: 4%;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .vision_container::before {
-    width: 340px;
-    height: 340px;
-    left: 30%;
-    bottom: 4%;
-  }
-}
-@media screen and (max-width: 768px) {
-  #vision {
-    height: 100svh;
-  }
-  .vision_container {
-    flex-direction: column;
-    padding: 40px 20px;
-    width: 100%;
-    align-items: flex-start;
-    gap: 25px;
-  }
-  .vision_container::before {
-    width: 240px;
-    height: 240px;
-    bottom: 2%;
-  }
-  .vision_container p {
-    width: 100%;
-  }
-}
 
 /********** SECTION ABOUT **********/
 #about {
@@ -785,59 +620,6 @@ span.orange {
   }
 }
 /* SECTION ABOUT MEDIA QUERIES */
-@media screen and (max-width: 1480px) {
-  .about_container {
-    width: 60%;
-    padding: 215px 0;
-  }
-  .about_container::before {
-    bottom: -8%;
-    left: 2%;
-    height: 471px;
-    width: 250px;
-  }
-  .about_container::after {
-    top: 10%;
-    right: 10%;
-    height: 160px;
-    width: 130px;
-  }
-}
-@media screen and (max-width: 1040px) {
-  .about_container {
-    width: 60%;
-  }
-  .about_container h2 {
-    font-size: 50px;
-  }
-  .about_container p {
-    font-size: 20px;
-  }
-  .about_container::before {
-    height: 335px;
-    width: 195px;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .about_container {
-    width: 100%;
-    padding: 140px 20px;
-  }
-  .about_container h2 {
-    font-size: 50px;
-  }
-  .about_container p {
-    font-size: 20px;
-  }
-  .about_container::before {
-    display: none;
-  }
-  .about_container::after {
-    top: 2%;
-    height: 115px;
-    width: 95px;
-  }
-}
 
 footer {
   background-color: var(--text-dark);
@@ -895,8 +677,258 @@ footer {
   display: flex;
   justify-content: space-between;
 }
-/* FOOTER MEDIA QUERIES */
+/* MEDIA QUERIES */
+
+/* Extra large screens */
+@media screen and (min-width: 1501px) {
+  /* SECTION VISION */
+  #vision {
+    height: 100svh;
+  }
+  .vision_container {
+    padding: 250px 0;
+  }
+  .vision_container::before {
+    width: 340px;
+    height: 340px;
+    left: 3%;
+    bottom: 4%;
+  }
+}
+
+/* Large screens */
+@media screen and (min-width: 1025px) and (max-width: 1500px) {
+  /* SECTION MISSION */
+  .mission_section .mission_container h2 {
+    width: 90%;
+  }
+  .mission_section .mission_container::before {
+    width: 370px;
+    height: 370px;
+    right: 15%;
+  }
+  .mission_section .mission_container::after {
+    width: 150px;
+    height: 150px;
+    right: 5%;
+  }
+
+  /* SECTION VISION */
+  #vision {
+    background-size: cover;
+    background-position: center 89%;
+  }
+  .vision_container {
+    padding: 196px 0;
+    width: 90%;
+  }
+  .vision_container::before {
+    width: 340px;
+    height: 340px;
+    left: 3%;
+    bottom: 4%;
+  }
+
+  /* SECTION ABOUT */
+  .about_container {
+    width: 60%;
+    padding: 215px 0;
+  }
+  .about_container::before {
+    bottom: -8%;
+    left: 2%;
+    height: 471px;
+    width: 250px;
+  }
+  .about_container::after {
+    top: 10%;
+    right: 10%;
+    height: 160px;
+    width: 130px;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .ctn {
+    max-width: 1040px;
+  }
+}
+
+/* Medium screens */
+@media screen and (min-width: 964px) {
+  :root {
+    --h1-font-size: 4rem;
+    --h2-font-size: 3.1rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* SECTION MISSION */
+  .mission_section .mission_container h2 {
+    width: 100%;
+    line-height: 3rem;
+    padding: 150px 0;
+    font-size: 35px;
+  }
+  .mission_section .mission_container::before {
+    width: 295px;
+    height: 295px;
+    right: 10%;
+    top: -12%;
+  }
+  .mission_section .mission_container::after {
+    width: 118px;
+    height: 118px;
+    right: 5%;
+    top: -5%;
+  }
+
+  /* SECTION VISION */
+  #vision {
+    background-size: cover;
+    background-position: center 89%;
+  }
+  .vision_container {
+    padding: 196px 0;
+    width: 90%;
+  }
+
+  /* SECTION ABOUT */
+  .about_container {
+    width: 60%;
+  }
+  .about_container h2 {
+    font-size: 50px;
+  }
+  .about_container p {
+    font-size: 20px;
+  }
+  .about_container::before {
+    height: 335px;
+    width: 195px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .mission_section .mission_container h2 {
+    width: 100%;
+    line-height: 3rem;
+    padding: 150px 0;
+    font-size: 35px;
+  }
+  .mission_section .mission_container::before {
+    width: 295px;
+    height: 295px;
+    right: 10%;
+    top: -12%;
+  }
+  .mission_section .mission_container::after {
+    width: 118px;
+    height: 118px;
+    right: 5%;
+    top: -5%;
+  }
+  .vision_container::before {
+    width: 340px;
+    height: 340px;
+    left: 25%;
+    bottom: 4%;
+  }
+}
+/* Small screens */
 @media screen and (max-width: 768px) {
+
+  /* HEADER NAVBAR MEDIA QUERIES */
+  .menu ul {
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: -768px;
+    width: 100%;
+    background-color: var(--text-white);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    padding: 30px 0;
+  }
+
+  .menu ul.show {
+    left: 0;
+  }
+
+  .menu ul li {
+    margin: 10px 0;
+  }
+
+  .burger-menu {
+    display: block;
+    transition: transform 0.3s ease;
+  }
+
+  .burger-menu.cross {
+    transform: rotate(90deg);
+  }
+  /* SECTION HERO */
+  #hero {
+    height: max-content;
+  }
+  .anazir_link {
+    align-items: center;
+  }
+  .anazir_link h1 {
+    text-align: center;
+    width: auto;
+  }
+  .btn-download-anazir a img {
+    width: 48%;
+  }
+
+  /* SECTION MISSION */
+  .mission_section .mission_container::before,
+  .mission_section .mission_container::after {
+    display: none;
+  }
+
+  /* SECTION VISION */
+  #vision {
+    height: 100svh;
+    background-size: cover;
+  }
+  .vision_container {
+    flex-direction: column;
+    padding: 40px 20px;
+    width: 100%;
+    align-items: flex-start;
+    gap: 25px;
+  }
+  .vision_container::before {
+    width: 240px;
+    height: 240px;
+    bottom: 2%;
+  }
+  .vision_container p {
+    width: 100%;
+  }
+
+  /* SECTION ABOUT */
+  .about_container {
+    width: 100%;
+    padding: 140px 20px;
+  }
+  .about_container h2 {
+    font-size: 50px;
+  }
+  .about_container p {
+    font-size: 20px;
+  }
+  .about_container::before {
+    display: none;
+  }
+  .about_container::after {
+    top: 2%;
+    height: 115px;
+    width: 95px;
+  }
+
+  /* SECTION FOOTER */
   .footer_container {
     text-align: center;
     padding: 40px 20px;
