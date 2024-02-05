@@ -374,7 +374,7 @@ header {
 .mission_container {
   position: relative;
 }
-.mission_section.is-visible .mission_container::before {
+.mission_section .mission_container::before {
   content: "";
   background-image: url(../images/golem-dolmoss.webp); /* Utilise background-image au lieu de content */
   background-size: cover;
@@ -387,7 +387,7 @@ header {
   animation-delay: 0s;
   opacity: 0; */
 }
-.mission_section.is-visible .mission_container::after {
+.mission_section .mission_container::after {
   content: "";
   background-image: url(../images/golem-horse.webp); /* Utilise background-image au lieu de content */
   background-size: cover;

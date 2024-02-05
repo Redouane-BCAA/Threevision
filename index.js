@@ -16,37 +16,19 @@ document.querySelectorAll(".menu a").forEach(link => {
 });
 
 // *** Lien actif ******
-const currentPathUrl = window.location.href;
 const menuLinks = document.querySelectorAll('.menu ul li a');
 
+// classe "active" au lien "Accueil" par défaut
+const homeLink = document.querySelector('.menu ul li a[href="index.html"]');
+homeLink.classList.add('active');
+
+// listener pour mettre à jour la classe "active" lors du clic sur un lien
 menuLinks.forEach(link => {
-  if (link.href === currentPathUrl) {
+  link.addEventListener('click', () => {
+    // on supprime la classe "active" de tous les liens
+    menuLinks.forEach(otherLink => otherLink.classList.remove('active'));
+    
+    // on ajoute la classe "active" au lien cliqué
     link.classList.add('active');
-  }
-});
-
-
-
-// ************** SECTION MISSION ANIMATION *******************
-
-document.addEventListener("DOMContentLoaded", function() {
-  const missionSection = document.querySelector('.mission_section');
-  const options = {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.5
-  };
-
-  const handleIntersection = (entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  };
-
-  const observer = new IntersectionObserver(handleIntersection, options);
-
-  observer.observe(missionSection);
+  });
 });
