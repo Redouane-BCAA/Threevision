@@ -18,10 +18,6 @@ document.querySelectorAll(".menu a").forEach(link => {
 // *** Lien actif ******
 const menuLinks = document.querySelectorAll('.menu ul li a');
 
-// classe "active" au lien "Accueil" par défaut
-const homeLink = document.querySelector('.menu ul li a[href="index.html"]');
-homeLink.classList.add('active');
-
 // listener pour mettre à jour la classe "active" lors du clic sur un lien
 menuLinks.forEach(link => {
   link.addEventListener('click', () => {
