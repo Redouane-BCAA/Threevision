@@ -36,5 +36,49 @@
       "role": "Directeur marketing & communication",
       "description": "Son expertise antérieure dans le domaine des jeux vidéo et de l'e-sport, ainsi que ses compétences en Growth-hacking, lui permettent de cultiver des communautés florissantes et de développer des stratégies marketing efficaces, en s'appuyant sur une connaissance approfondie du marché et des joueurs."
     }
+  ],
+  "teammates": [
+    {
+      "name": "Elio Toutain",
+      "img": "../assets/images/elio-stick.webp",
+      "role": "Artiste 3D",
+      "description": "Mangeur de mana légendaire, il est raconté que 98% des assets 3D du monde proviennent de Elio, et il est chez nous.",
+      "game" : "Divinity Original Sin 2"
+    },
+    {
+      "name": "Enzo Suares",
+      "img": "../assets/images/enzo-stick.webp",
+      "role": "Programmeur",
+      "description": "Vous avez déjà vu Mr Robot ? Il est venu dans nos locaux pour remercier Enzo de lui avoir appris tout ce qu’il sait.",
+      "game" : "Jeu favori : Tetris"
+    },
+    {
+      "name": "Jules Duhommet",
+      "img": "../assets/images/jules-stick.webp",
+      "role": "Artiste VFX",
+      "description": "On lui a demandé des effets cools, il nous a fait des effets fantastiques, c’est donc ça l’effet Jules ?",
+      "game" : "Overwatch 1"
+    },
+    {
+      "name": "Killian Motel",
+      "img": "../assets/images/killian-stick.webp",
+      "role": "Programmeur",
+      "description": "Ce triple beau-gosse au profil de surfeur est au notre super programmeur déceleur de bug.",
+      "game" : "Road 96"
+    },
+    {
+      "name": "Marion Bouzir",
+      "img": "../assets/images/marion-stick.webp",
+      "role": "Directrice artistique",
+      "description": "Sous ses airs angéliques, Marion s’assure de la bonne cohérence artistique de nos jeux.",
+      "game" : "Heroes of might and magic 4"
+    },
+    {
+      "name": "Thomas Goudeseune",
+      "img": "../assets/images/thomas-stick.webp",
+      "role": "Animateur 3D",
+      "description": "Vous avez déjà vu un rocher marcher ? Nous oui. Thomas est capable de donner vie et d’animer tout ce qu’il touche ! ",
+      "game" : "Rust"
+    }
   ]
 }

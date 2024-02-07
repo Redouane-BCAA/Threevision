@@ -785,13 +785,13 @@ span.orange {
 }
 
 /********** SECTION FUNDER **********/
-section.funder{
+section.funder {
   position: relative;
   overflow: hidden;
 }
 
-.funder::before{
-  content: '';
+.funder::before {
+  content: "";
   background-image: url(../images/logo-threevision-funder.svg);
   position: absolute;
   height: 500px;
@@ -800,7 +800,7 @@ section.funder{
   right: -7%;
   z-index: -1;
 }
-.funder_team{
+.funder_team {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -808,45 +808,184 @@ section.funder{
   padding: 40px 0;
   width: 100%;
 }
-.funder_team h3{
+.funder_team h3 {
   font-family: var(--body-font);
   font-size: 24px;
 }
-.funder_cards_container{
+.funder_cards_container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 20px;
   width: 100%;
 }
-.funder_card{
+.funder_card {
   display: flex;
   gap: 20px;
 }
-.funder_card_txt{
+.funder_card_txt {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-.funder_card_txt h4{
+.funder_card_txt h4 {
   font-size: 24px;
   font-weight: var(--font-bold);
 }
-.funder_card_txt :nth-child(2){
+.funder_card_txt :nth-child(2) {
   font-size: 20px;
   font-weight: var(--font-bold);
   color: var(--blue);
 }
-.funder_card_txt :nth-child(3){
+.funder_card_txt :nth-child(3) {
   font-size: 20px;
 }
-.funder_img{
+.funder_img {
   width: 100%;
   max-width: 1130px;
   -webkit-box-shadow: 0px 40px 30px 40px #000000,
     1px 22px 15px -15px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 10px 13px -7px #000000,
     1px 22px 15px -15px rgba(0, 0, 0, 0.15);
+}
+
+/************ SECTION TEAM ******************/
+.team {
+  position: relative;
+  background-color: #171717;
+  color: var(--text-white);
+}
+.team::after {
+  content: "";
+  background-image: url(../images/tourelle-humus.webp);
+  background-size: cover;
+  height: 485px;
+  width: 485px;
+  position: absolute;
+  bottom: -19%;
+  right: -0%;
+  animation: rotateImage 10s infinite linear;
+}
+.team::before {
+  content: "";
+  background-image: url(../images/radiant-humus.svg);
+  background-size: cover;
+  height: 410px;
+  width: 410px;
+  position: absolute;
+  bottom: -5%;
+  right: 5%;
+  animation: glowAnimation 5s infinite alternate;
+}
+@keyframes glowAnimation {
+  0% {
+    opacity: 0.5; 
+    transform: scale(1); 
+  }
+  50% {
+    opacity: 1; 
+    transform: scale(1.1); 
+  }
+  100% {
+    opacity: 0.5; 
+    transform: scale(1); 
+  }
+}
+.team_container {
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.team_container_title,
+.team_container_txt {
+  text-align: center;
+}
+.team_container_title h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.bl {
+  color: var(--blue);
+}
+
+.team_container_txt :nth-child(1) {
+  font-size: 18px;
+  font-weight: var(--font-bold);
+  margin-bottom: 10px;
+}
+.team_container_txt :nth-child(2) {
+  font-family: "Londrina Solid", sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.team_container_txt :nth-child(3) {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+/* teammate card */
+/* color team class */
+.team-orange {
+  color: #fe9901;
+}
+.team-violet {
+  color: #c190ff;
+}
+.team-green {
+  color: #7fff74;
+}
+.team-blue {
+  color: #4a9fff;
+}
+.teammate_container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.teammate_card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 30%;
+  max-width: 450px;
+  min-width: 300px;
+}
+.teammate_card_txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  height: 100%;
+}
+.teammate_card_txt p {
+  font-size: 18px;
+  line-height: 1.3;
+}
+.teammate_card_txt > p{
+  height: 50%;
+}
+.teammate_card_txt h4 {
+  font-size: 24px;
+  font-weight: var(--font-bold);
+  text-transform: uppercase;
+}
+.teammate_infos{
+  height: 50%;
+}
+.teammate_infos :nth-child(2) {
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+.teammate_infos .game-info {
+  font-size: var(--normal-font-size);
+  text-transform: uppercase;
+  font-size: var(--normal-font-size);
+}
+.span-bold {
+  font-weight: var(--font-bold);
 }
 
 /************ MEDIA QUERIES *****************/
@@ -935,10 +1074,10 @@ section.funder{
     margin-bottom: 15px;
   }
   /* SECTION FUNDER */
-  .funder_team h3{
+  .funder_team h3 {
     font-size: 20px;
   }
-  .funder::before{
+  .funder::before {
     top: 12%;
     right: -10%;
   }
@@ -952,8 +1091,8 @@ section.funder{
   }
 }
 /* Medium screens */
-@media screen and (max-width: 1250px){
-  .presentation_funder::before{
+@media screen and (max-width: 1250px) {
+  .presentation_funder::before {
     height: 270px;
     width: 200px;
     right: 0%;
@@ -1030,7 +1169,7 @@ section.funder{
     left: 25%;
     bottom: 4%;
   }
-  .funder::before{
+  .funder::before {
     display: none;
   }
 }
@@ -1158,15 +1297,15 @@ section.funder{
   .presentation_funder {
     padding: 20px 0;
   }
-  .presentation_funder :nth-child(1){
+  .presentation_funder :nth-child(1) {
     width: 100%;
     padding: 0 20px;
   }
-  .presentation_funder :nth-child(3){
+  .presentation_funder :nth-child(3) {
     margin-top: 15px;
     padding: 0 20px;
   }
-  .presentation_funder::before{
+  .presentation_funder::before {
     height: 100px;
     width: 75px;
     position: absolute;
@@ -1174,16 +1313,16 @@ section.funder{
     right: 0%;
   }
   /* SECTION FUNDER */
-  .funder_team{
+  .funder_team {
     width: 100%;
   }
 }
-@media screen and (max-width: 500px){
-  .funder_card{
+@media screen and (max-width: 500px) {
+  .funder_card {
     flex-direction: column;
     gap: 20px;
   }
-  .funder_img{
+  .funder_img {
     display: none;
   }
 }
