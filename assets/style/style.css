@@ -695,7 +695,7 @@ span.orange {
     transform: translateY(-10px) rotate(-5deg); /* Ajuste la distance et l'angle selon tes préférences */
   }
 }
-
+/*********************************************************************/
 /**************** PAGE LE-STUDIO ********************/
 .center-grid {
   display: grid;
@@ -783,6 +783,72 @@ span.orange {
   text-align: center;
   font-size: 1rem;
 }
+
+/********** SECTION FUNDER **********/
+section.funder{
+  position: relative;
+  overflow: hidden;
+}
+
+.funder::before{
+  content: '';
+  background-image: url(../images/logo-threevision-funder.svg);
+  position: absolute;
+  height: 500px;
+  width: 440px;
+  top: 12%;
+  right: -7%;
+  z-index: -1;
+}
+.funder_team{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 0;
+  width: 100%;
+}
+.funder_team h3{
+  font-family: var(--body-font);
+  font-size: 24px;
+}
+.funder_cards_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
+.funder_card{
+  display: flex;
+  gap: 20px;
+}
+.funder_card_txt{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.funder_card_txt h4{
+  font-size: 24px;
+  font-weight: var(--font-bold);
+}
+.funder_card_txt :nth-child(2){
+  font-size: 20px;
+  font-weight: var(--font-bold);
+  color: var(--blue);
+}
+.funder_card_txt :nth-child(3){
+  font-size: 20px;
+}
+.funder_img{
+  width: 100%;
+  max-width: 1130px;
+  -webkit-box-shadow: 0px 40px 30px 40px #000000,
+    1px 22px 15px -15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 10px 13px -7px #000000,
+    1px 22px 15px -15px rgba(0, 0, 0, 0.15);
+}
+
 /************ MEDIA QUERIES *****************/
 
 /* Extra large screens */
@@ -867,6 +933,14 @@ span.orange {
   .presentation_funder :nth-child(1) {
     font-size: 20px;
     margin-bottom: 15px;
+  }
+  /* SECTION FUNDER */
+  .funder_team h3{
+    font-size: 20px;
+  }
+  .funder::before{
+    top: 12%;
+    right: -10%;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -955,6 +1029,9 @@ span.orange {
     height: 340px;
     left: 25%;
     bottom: 4%;
+  }
+  .funder::before{
+    display: none;
   }
 }
 
@@ -1095,5 +1172,18 @@ span.orange {
     position: absolute;
     top: -12%;
     right: 0%;
+  }
+  /* SECTION FUNDER */
+  .funder_team{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px){
+  .funder_card{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .funder_img{
+    display: none;
   }
 }

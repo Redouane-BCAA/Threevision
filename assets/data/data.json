@@ -1,0 +1,40 @@
+{
+  "funder": [
+    {
+      "name": "Arthur Michigan",
+      "img": "../assets/images/arthur-m.webp",
+      "role": "Head of Game",
+      "description": "Game Designer depuis près de 8 ans sur tout type de support. Formé et diplômé en Game Design et UI/UX Design, il a créé et participé au développement de deux projets ambitieux ayant eux un succès économique sur Kickstarter. Arthur s'applique aujourd'hui à explorer de nouvelles interactions sociales et divertissantes via l'expérimentation au travers du jeu."
+    },
+    {
+      "name": "Jonathan Martelli",
+      "img": "../assets/images/jonathan-m.webp",
+      "role": "Conseiller stratégique & Investisseur",
+      "description": "Entrepreneur, spécialisé dans la conception de SI, fondateur de plusieurs sociétés dont le fournisseur d’énergie ekwateur (certifié BCorp, membre French Tech, CA > 650M€). Il met son expérience au service de Threevision depuis la première heure."
+    },
+    {
+      "name": "Jason Espinasse",
+      "img": "../assets/images/jason-e.webp",
+      "role": "CTO",
+      "description": "Programmeur de jeux depuis 2016, Jason a obtenu son diplôme très tôt et a contribué à plusieurs jeux-vidéos mêlant différents genres sur Unreal Engine et Unity. Aujourd’hui, Jason utilise son expertise pour mener le pôle technique du studio et s’assurer de produire des jeux de qualités."
+    },
+    {
+      "name": "Alexandre Pourghavami",
+      "img": "../assets/images/alexandre-p.webp",
+      "role": "CEO",
+      "description": "Depuis plus de 6 ans dans l’entreprenariat, Alexandre mène des projets et développe des marques de manière autonome, ce qui a renforcé ses compétences en gestion d'équipe, finances, marketing et recrutement. Il a une vision claire de l'industrie et ambitionne de positionner Threevision comme leader de ce marché."
+    },
+    {
+      "name": "Amine Moussous",
+      "img": "../assets/images/amine-m.webp",
+      "role": "Producer",
+      "description": "Depuis 2016, Amine met au service de l’équipe ses compétences d’organisation et design. Après avoir travaillé plusieurs années dans l’IT en tant que designer d’interface et chef de projet, son objectif aujourd’hui est de concevoir des jeux originaux qui répondront aux attentes des joueurs."
+    },
+    {
+      "name": "Zaki Moussous",
+      "img": "../assets/images/zaki-m.webp",
+      "role": "Directeur marketing & communication",
+      "description": "Son expertise antérieure dans le domaine des jeux vidéo et de l'e-sport, ainsi que ses compétences en Growth-hacking, lui permettent de cultiver des communautés florissantes et de développer des stratégies marketing efficaces, en s'appuyant sur une connaissance approfondie du marché et des joueurs."
+    }
+  ]
+}

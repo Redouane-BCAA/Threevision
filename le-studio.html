@@ -44,7 +44,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/style/style.css" />
     <!-- JS -->
-    <script defer src="index.js"></script>
+    <script type="module" src="/assets/js/index.js"></script>
 
     <title>Threevision</title>
   </head>
@@ -62,7 +62,10 @@
               >
             </li>
             <li>
-              <a class="active" aria-label="lien vers la page le studio" href="#"
+              <a
+                class="active"
+                aria-label="lien vers la page le studio"
+                href="#"
                 >LE STUDIO</a
               >
             </li>
@@ -77,7 +80,7 @@
       </nav>
     </header>
     <main>
-      <section class="presentation ">
+      <section class="presentation">
         <div class="presentation_container ctn center-grid">
           <div class="presentation_content">
             <img src="assets/images/threevision-wave-blue.webp" alt="" />
@@ -86,19 +89,20 @@
 
             <div class="presentation_content_txt">
               <p>
-                Threevision a été créé par des amis et anciens collègues issus de
-                milieux professionnel variés, partageant depuis leur plus jeune
-                âge une fascination commune pour l’univers des jeux vidéo.
+                Threevision a été créé par des amis et anciens collègues issus
+                de milieux professionnel variés, partageant depuis leur plus
+                jeune âge une fascination commune pour l’univers des jeux vidéo.
               </p>
               <p>
-                L'idée de créer leur propre studio a émergé lors d'une discussion
-                animée autour de leur amour partagé pour l'innovation, la
-                créativité et le potentiel du médium vidéoludique.
+                L'idée de créer leur propre studio a émergé lors d'une
+                discussion animée autour de leur amour partagé pour
+                l'innovation, la créativité et le potentiel du médium
+                vidéoludique.
               </p>
               <p>
                 Chacun apporte des compétences uniques à la table, que ce soit
-                dans le domaine du design, de la narration, de la finance ou de la
-                gestion de projet.
+                dans le domaine du design, de la narration, de la finance ou de
+                la gestion de projet.
               </p>
             </div>
           </div>
@@ -109,9 +113,34 @@
               avril 2022 à Paris, une entreprise soutenue par de la passion, du
               partage et de la confiance.
             </p>
-            <img src="assets/images/funder-pic.webp" alt="photo des fondateurs du studio Threevision" />
-            <p>(Photos prises 2 mois avant la création officielle du studio et un rendez-vous chez le coiffeur)</p>
+            <img
+              src="assets/images/funder-pic.webp"
+              alt="photo des fondateurs du studio Threevision"
+            />
+            <p>
+              (Photos prises 2 mois avant la création officielle du studio et un
+              rendez-vous chez le coiffeur)
+            </p>
           </div>
+        </div>
+      </section>
+      <section class="funder">
+        <div class="funder_container ctn center-grid">
+          <div class="funder_team">
+            <h3>
+              Depuis la création du studio, l’équipe s’est associée avec 2
+              nouveaux collaborateurs qui apportent force d’exécution et vision
+              à la société.
+            </h3>
+            <div class="funder_cards_container">
+              <!-- card funder membre récupérés dynamiquement -->
+            </div>
+          </div>
+          <img
+          class="funder_img"
+            src="assets/images/team.webp"
+            alt="photo de l'équipe threevision"
+          />
         </div>
       </section>
     </main>
