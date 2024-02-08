@@ -806,7 +806,7 @@ section.funder {
   align-items: center;
   gap: 30px;
   padding: 40px 0;
-  width: 100%;
+  width: 80%;
 }
 .funder_team h3 {
   font-family: var(--body-font);
@@ -841,8 +841,7 @@ section.funder {
   font-size: 20px;
 }
 .funder_img {
-  width: 100%;
-  max-width: 1130px;
+  width: 90%;
   -webkit-box-shadow: 0px 40px 30px 40px #000000,
     1px 22px 15px -15px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 10px 13px -7px #000000,
@@ -854,41 +853,43 @@ section.funder {
   position: relative;
   background-color: #171717;
   color: var(--text-white);
+  z-index: 1;
 }
 .team::after {
   content: "";
-  background-image: url(../images/tourelle-humus.webp);
+  background-image: url(../images/tourelle-humus-2.webp);
   background-size: cover;
-  height: 485px;
+  height: 490px;
   width: 485px;
   position: absolute;
-  bottom: -19%;
+  bottom: -21%;
   right: -0%;
-  animation: rotateImage 10s infinite linear;
+  z-index: -1;
 }
 .team::before {
   content: "";
-  background-image: url(../images/radiant-humus.svg);
+  background-image: url(../images/ellipse.webp);
   background-size: cover;
   height: 410px;
   width: 410px;
   position: absolute;
   bottom: -5%;
-  right: 5%;
-  animation: glowAnimation 5s infinite alternate;
+  right: 1%;
+  animation: glowAnimation 5s infinite linear;
+  z-index: -1;
 }
 @keyframes glowAnimation {
   0% {
-    opacity: 0.5; 
-    transform: scale(1); 
+    opacity: 0.5;
+    transform: scale(1);
   }
   50% {
-    opacity: 1; 
-    transform: scale(1.1); 
+    opacity: 1;
+    transform: scale(1.1);
   }
   100% {
-    opacity: 0.5; 
-    transform: scale(1); 
+    opacity: 0.5;
+    transform: scale(1);
   }
 }
 .team_container {
@@ -908,6 +909,7 @@ section.funder {
 }
 .bl {
   color: var(--blue);
+  font-weight: var(--font-bold);
 }
 
 .team_container_txt :nth-child(1) {
@@ -947,10 +949,10 @@ section.funder {
 }
 .teammate_card {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 20px;
-  width: 30%;
-  max-width: 450px;
+  width: 32%;
   min-width: 300px;
 }
 .teammate_card_txt {
@@ -958,13 +960,12 @@ section.funder {
   flex-direction: column;
   justify-content: space-between;
   gap: 10px;
-  height: 100%;
 }
 .teammate_card_txt p {
   font-size: 18px;
   line-height: 1.3;
 }
-.teammate_card_txt > p{
+.teammate_card_txt > p {
   height: 50%;
 }
 .teammate_card_txt h4 {
@@ -972,7 +973,7 @@ section.funder {
   font-weight: var(--font-bold);
   text-transform: uppercase;
 }
-.teammate_infos{
+.teammate_infos {
   height: 50%;
 }
 .teammate_infos :nth-child(2) {
@@ -987,7 +988,72 @@ section.funder {
 .span-bold {
   font-weight: var(--font-bold);
 }
-
+/* **************** SECTION THREE VISION ********************/
+.three-vision {
+  position: relative;
+  background-color: var(--text-white);
+  padding: 80px 0;
+}
+.three-vision::before {
+  content: "";
+  background-image: url(../images/tower.webp);
+  background-size: cover;
+  height: 430px;
+  width: 400px;
+  position: absolute;
+  bottom: -10%;
+  left: 0%;
+}
+.three-vision_container {
+  width: 55%;
+}
+.three-vision_title {
+  margin-bottom: 30px;
+  line-height: 1.1;
+}
+.three-vision_title h3 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+.three-vision_title p {
+  font-size: 20px;
+}
+.three-vision-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+.three-vision-content :last-child {
+  border: none;
+}
+.three-vision-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding-bottom: 20px;
+  border-bottom: #c4e0ff solid 1px;
+}
+/* .three-vision-card img{
+  background-color: var(--background);
+  padding: 20px;
+  border: 4px dashed var(--blue);
+} */
+.three-vision-card-txt h4 {
+  font-size: 22px;
+  font-weight: var(--font-bold);
+  text-transform: uppercase;
+  color: var(--blue);
+  margin-bottom: 10px;
+}
+.three-vision-card-txt p {
+  font-size: 20px;
+  line-height: normal;
+}
+.three-vision-card-txt p span {
+  font-weight: var(--font-bold);
+}
 /************ MEDIA QUERIES *****************/
 
 /* Extra large screens */
@@ -1081,6 +1147,20 @@ section.funder {
     top: 12%;
     right: -10%;
   }
+  .team::after {
+    height: 400px;
+    width: 375px;
+    bottom: -14%;
+  }
+  .team::before {
+    height: 250px;
+    width: 250px;
+    bottom: 0%;
+    right: 3%;
+  }
+  .three-vision-card-txt p {
+    font-size: 16px;
+  }
 }
 @media screen and (min-width: 1024px) {
   :root {
@@ -1171,6 +1251,10 @@ section.funder {
   }
   .funder::before {
     display: none;
+  }
+  .teammate_card {
+    width: 48%;
+    padding: 20px;
   }
 }
 
@@ -1313,8 +1397,53 @@ section.funder {
     right: 0%;
   }
   /* SECTION FUNDER */
+  .team::before {
+    display: none;
+  }
+  .team::after {
+    display: none;
+  }
   .funder_team {
     width: 100%;
+  }
+  .team_container_title {
+    padding: 20px;
+    text-align: left;
+  }
+  .teammate_card {
+    width: 100%;
+    padding: 20px;
+  }
+  .teammate_card_txt p {
+    font-size: 16px;
+    line-height: 1.1;
+  }
+  .teammate_card_txt h4 {
+    font-size: 20px;
+  }
+  .team_container_txt {
+    padding: 20px;
+  }
+  .team_container_txt :nth-child(1) {
+    font-size: 16px;
+  }
+  .team_container_txt :nth-child(2) {
+    font-size: 28px;
+  }
+  .team_container_txt :nth-child(3) {
+    font-size: 19px;
+  }
+  /* SECTION THREE -VISION */
+  .three-vision::before {
+    display: none;
+  }
+  .three-vision_container {
+    width: 100%;
+  }
+  .three-vision-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }
 @media screen and (max-width: 500px) {
