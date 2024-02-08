@@ -21,6 +21,8 @@ export function createTeammateCard(teammate) {
   const img = document.createElement("img");
   img.src = teammate.img;
   img.alt = "photo de notre équipier " + teammate.name;
+  img.width = 131;
+  img.height = 222;
 
   const txtDiv = document.createElement("div");
   txtDiv.classList.add("teammate_card_txt");

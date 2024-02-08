@@ -213,7 +213,7 @@ footer {
   flex-direction: column;
   background: linear-gradient(270deg, rgba(0, 0, 0, 0) 34.27%, #000 100%),
     url(../images/war-bg.webp) no-repeat bottom center/cover;
-  background-position: center bottom ;
+  background-position: center bottom;
   margin-top: 74px;
   padding: 40px 0px;
 }
@@ -233,7 +233,8 @@ footer {
   height: 100%;
 }
 
-.hero_content h1 {
+.hero_content h1,
+.hero_content h2 {
   font-size: var(--h2-font-size);
   font-weight: var(--font-bold);
   color: var(--text-white);
@@ -1400,7 +1401,8 @@ section.funder {
   .anazir_link {
     align-items: center;
   }
-  .anazir_link h1 {
+  .anazir_link h1,
+  .anazir_link h2 {
     text-align: center;
     width: auto;
   }

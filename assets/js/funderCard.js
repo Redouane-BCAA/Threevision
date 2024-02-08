@@ -2,9 +2,9 @@
 // Utilisation de Fetch pour récupérer les données
 export async function fetchDataFunder() {
   try {
-    const response = await fetch("../assets/data/data.json"); 
+    const response = await fetch("../assets/data/data.json");
     const data = await response.json();
-    return data.funder 
+    return data.funder;
   } catch (error) {
     console.error("Erreur lors de la récupération des données :", error);
     return [];
@@ -20,6 +20,8 @@ export function createMemberCard(member) {
   const img = document.createElement("img");
   img.src = member.img;
   img.alt = "photo de l'un des fondateurs du studio Threevision";
+  img.width = 130;
+  img.height = 130;
   imgDiv.appendChild(img);
 
   const txtDiv = document.createElement("div");
@@ -46,7 +48,7 @@ export async function displayMemberCards() {
     ".funder_cards_container"
   );
   const data = await fetchDataFunder();
-  funderCardsContainer.innerHTML = ""; 
+  funderCardsContainer.innerHTML = "";
   data.forEach((member) => {
     const card = createMemberCard(member);
     funderCardsContainer.appendChild(card);

@@ -42,6 +42,9 @@
       href="assets/images/threevision-logo.webp"
       type="image/x-icon"
     />
+    <!-- PRELOAD -->
+    <link rel="preload" href="assets/images/Helak-bg.webp" as="image" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <!-- CSS -->
     <link rel="stylesheet" href="assets/style/style.css" />
     <!-- JS -->
@@ -53,13 +56,18 @@
     <header>
       <nav class="ctn navbar">
         <div class="logo">
-          <img src="assets/images/threevision-logo-1.webp" alt="logo" />
+          <img
+            src="assets/images/threevision-logo-1.webp"
+            alt="logo threevision"
+            width="186"
+            height="32"
+          />
         </div>
         <div class="menu">
           <ul>
             <li>
               <a aria-label="lien vers la page acceuil" href="index.html"
-                >ACCEUIL</a
+                >ACCUEIL</a
               >
             </li>
             <li>
@@ -84,7 +92,12 @@
       <section class="presentation">
         <div class="presentation_container ctn center-grid">
           <div class="presentation_content">
-            <img src="assets/images/threevision-wave-blue.webp" alt="" />
+            <img
+              src="assets/images/threevision-wave-blue.webp"
+              alt=" logo threevision"
+              width="70"
+              height="70"
+            />
             <span class="bl">Bienvenue</span>
             <h1>DANS LE STUDIO.</h1>
 
@@ -117,6 +130,8 @@
             <img
               src="assets/images/funder-pic.webp"
               alt="photo des fondateurs du studio Threevision"
+              srcset="assets/images/funder-pic-350.webp 350w"
+              sizes="(max-width: 500px) 100vw, 50vw"
             />
             <p>
               (Photos prises 2 mois avant la création officielle du studio et un
@@ -141,6 +156,7 @@
             class="funder_img"
             src="assets/images/team.webp"
             alt="photo de l'équipe threevision"
+            width="1206"
           />
         </div>
       </section>
@@ -172,7 +188,12 @@
           </div>
           <div class="three-vision-content">
             <div class="three-vision-card">
-              <img src="assets/images/dashed-logo.svg" alt="logo threevision" />
+              <img
+                src="assets/images/dashed-logo.svg"
+                alt="logo threevision"
+                width="120"
+                height="121"
+              />
               <div class="three-vision-card-txt">
                 <h4>Mécaniques de jeux nouvelles</h4>
                 <p>
@@ -187,7 +208,12 @@
               </div>
             </div>
             <div class="three-vision-card">
-              <img src="assets/images/dashed-logo.svg" alt="logo threevision" />
+              <img
+                src="assets/images/dashed-logo.svg"
+                alt="logo threevision"
+                width="120"
+                height="121"
+              />
               <div class="three-vision-card-txt">
                 <h4>économies durables</h4>
                 <p>
@@ -200,7 +226,12 @@
               </div>
             </div>
             <div class="three-vision-card">
-              <img src="assets/images/dashed-logo.svg" alt="logo threevision" />
+              <img
+                src="assets/images/dashed-logo.svg"
+                alt="logo threevision"
+                width="120"
+                height="121"
+              />
               <div class="three-vision-card-txt">
                 <h4>Valeurs sociales</h4>
                 <p>
@@ -273,7 +304,7 @@
               <p><span>Steven Pinheiro</span> - Concept Artiste</p>
               <p><span>Daniel Gardebien</span> - Sound designer</p>
               <p><span>Teiki Petit</span> - Concept Artiste</p>
-              <p><span>Rédouane Bouchmaa</span> - Développeur front</p>            
+              <p><span>Rédouane Bouchmaa</span> - Développeur front</p>
             </div>
           </div>
           <div class="thanks_content_message">
@@ -282,25 +313,53 @@
           </div>
         </div>
       </section>
-      <section class="partner">
+      <div class="partner">
         <div class="partner_container ctn">
-          <img src="assets/images/bpi-logo.webp" alt="logo partenaire bpi france">
-          <img src="assets/images/snjv-logo.webp" alt="logo partenaire snjv">
-          <img src="assets/images/escalator-logo.webp" alt="logo partenaire l'escalator">
-          <img src="assets/images/unity-logo.webp" alt="logo partenaire unity">
-          <img src="assets/images/france-2030-logo.webp" alt="logo partenaire france 2030">
+          <img
+            src="assets/images/bpi-logo.webp"
+            alt="logo partenaire bpi france"
+            width="245"
+            height="71"
+          />
+          <img
+            src="assets/images/snjv-logo.webp"
+            alt="logo partenaire snjv"
+            width="121"
+            height="71"
+          />
+          <img
+            src="assets/images/escalator-logo.webp"
+            alt="logo partenaire l'escalator"
+            width="71"
+            height="71"
+          />
+          <img
+            src="assets/images/unity-logo.webp"
+            alt="logo partenaire unity"
+            width="192"
+            height="71"
+          />
+          <img
+            src="assets/images/france-2030-logo.webp"
+            alt="logo partenaire france 2030"
+            width="71"
+            height="71"
+          />
         </div>
-      </section>
-      <section class="anazir" >
+      </div>
+      <section class="anazir">
         <div class="anazir_container ctn">
           <div class="hero_content anazir_link">
             <img
               src="assets/images/Anazir-logo.webp"
               alt="logo du jeu Anazir"
+              width="247"
+              height="136"
             />
-            <h1>
-              Devenez l'un de nos testeurs dès maintenant en téléchargeant Anazir.
-            </h1>
+            <h2>
+              Devenez l'un de nos testeurs dès maintenant en téléchargeant
+              Anazir.
+            </h2>
             <div class="btn-download-anazir">
               <a
                 aria-label="lien de telechargement google play Anazir"
@@ -308,6 +367,8 @@
                 ><img
                   src="assets/images/google-play.svg"
                   alt="lien de telechargement google play Anazir"
+                  width="182"
+                  height="50"
               /></a>
               <a
                 aria-label="lien de telechargement app store Anazir"
@@ -315,6 +376,8 @@
                 ><img
                   src="assets/images/apple-link.svg"
                   alt="lien de telechargement app store Anazir"
+                  width="182"
+                  height="50"
               /></a>
             </div>
           </div>
@@ -325,7 +388,12 @@
       <div class="ctn footer_container">
         <div class="contact-menu" id="contact">
           <div class="contact">
-            <img src="assets/images/threevision-logo-white.webp" alt="" />
+            <img
+              src="assets/images/threevision-logo-white.webp"
+              alt="logo threevision"
+              width="190"
+              height="33"
+            />
             <p>Pour nous conctactez :</p>
             <a href="mailto:contact@threevisionsas.com"
               >contact@threevisionsas.com</a
