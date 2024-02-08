@@ -212,8 +212,8 @@ footer {
   align-items: center;
   flex-direction: column;
   background: linear-gradient(270deg, rgba(0, 0, 0, 0) 34.27%, #000 100%),
-    url(../images/bg-1.webp) no-repeat bottom center/cover;
-  background-position: center bottom 22%;
+    url(../images/war-bg.webp) no-repeat bottom center/cover;
+  background-position: center bottom ;
   margin-top: 74px;
   padding: 40px 0px;
 }
@@ -480,7 +480,6 @@ span.orange {
   top: 15%;
   left: 20%;
   width: 50px;
-  rotate: -50deg;
   opacity: 0;
   animation: flicker 10s linear infinite;
   animation-delay: 1ms;
