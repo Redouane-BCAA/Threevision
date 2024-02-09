@@ -2,36 +2,42 @@
   "funder": [
     {
       "name": "Arthur Michigan",
+      "linkedin" : "https://www.linkedin.com/in/arthur-michigan-6a77a9166/",
       "img": "../assets/images/arthur-m.webp",
       "role": "Head of Game",
-      "description": "Game Designer depuis près de 8 ans sur tout type de support. Formé et diplômé en Game Design et UI/UX Design, il a créé et participé au développement de deux projets ambitieux ayant eux un succès économique sur Kickstarter. Arthur s'applique aujourd'hui à explorer de nouvelles interactions sociales et divertissantes via l'expérimentation au travers du jeu."
+      "description": "Game Designer depuis près de 8 ans sur tout type de support. Formé et diplômé en Game Design et UI/UX Design, il a créé et participé au développement de deux projets ambitieux ayant eu un succès économique sur Kickstarter. Arthur s'applique aujourd'hui à explorer de nouvelles interactions sociales et divertissantes via l'expérimentation au travers du jeu."
     },
     {
       "name": "Jonathan Martelli",
+      "linkedin" : "https://www.linkedin.com/in/jonathan-martelli-738739a/",
       "img": "../assets/images/jonathan-m.webp",
       "role": "Conseiller stratégique & Investisseur",
       "description": "Entrepreneur, spécialisé dans la conception de SI, fondateur de plusieurs sociétés dont le fournisseur d’énergie ekwateur (certifié BCorp, membre French Tech, CA > 650M€). Il met son expérience au service de Threevision depuis la première heure."
     },
     {
       "name": "Jason Espinasse",
+      "linkedin" : "https://www.linkedin.com/in/jason-espinasse/",
       "img": "../assets/images/jason-e.webp",
       "role": "CTO",
-      "description": "Programmeur de jeux depuis 2016, Jason a obtenu son diplôme très tôt et a contribué à plusieurs jeux-vidéos mêlant différents genres sur Unreal Engine et Unity. Aujourd’hui, Jason utilise son expertise pour mener le pôle technique du studio et s’assurer de produire des jeux de qualités."
+      "description": "Programmeur de jeux depuis 2016, Jason a obtenu son diplôme très tôt et a contribué à plusieurs jeux-vidéos mêlant différents genres sur Unreal Engine et Unity. Aujourd’hui, Jason utilise son expertise pour mener le pôle technique du studio et s’assurer de produire des jeux de qualité."
     },
     {
       "name": "Alexandre Pourghavami",
+      "linkedin" : "https://www.linkedin.com/in/alexandre-pourghavami-5182b1229/",
       "img": "../assets/images/alexandre-p.webp",
       "role": "CEO",
       "description": "Depuis plus de 6 ans dans l’entreprenariat, Alexandre mène des projets et développe des marques de manière autonome, ce qui a renforcé ses compétences en gestion d'équipe, finances, marketing et recrutement. Il a une vision claire de l'industrie et ambitionne de positionner Threevision comme leader de ce marché."
     },
     {
       "name": "Amine Moussous",
+      "linkedin" : "https://www.linkedin.com/in/amoussous/",
       "img": "../assets/images/amine-m.webp",
       "role": "Producer",
       "description": "Depuis 2016, Amine met au service de l’équipe ses compétences d’organisation et design. Après avoir travaillé plusieurs années dans l’IT en tant que designer d’interface et chef de projet, son objectif aujourd’hui est de concevoir des jeux originaux qui répondront aux attentes des joueurs."
     },
     {
       "name": "Zaki Moussous",
+      "linkedin" : "https://www.linkedin.com/in/zaki-moussous/",
       "img": "../assets/images/zaki-m.webp",
       "role": "Directeur marketing & communication",
       "description": "Son expertise antérieure dans le domaine des jeux vidéo et de l'e-sport, ainsi que ses compétences en Growth-hacking, lui permettent de cultiver des communautés florissantes et de développer des stratégies marketing efficaces, en s'appuyant sur une connaissance approfondie du marché et des joueurs."
@@ -50,7 +56,7 @@
       "img": "../assets/images/enzo-stick.webp",
       "role": "Programmeur",
       "description": "Vous avez déjà vu Mr Robot ? Il est venu dans nos locaux pour remercier Enzo de lui avoir appris tout ce qu’il sait.",
-      "game" : "Jeu favori : Tetris"
+      "game" : "Tetris"
     },
     {
       "name": "Jules Duhommet",
@@ -63,7 +69,7 @@
       "name": "Killian Motel",
       "img": "../assets/images/killian-stick.webp",
       "role": "Programmeur",
-      "description": "Ce triple beau-gosse au profil de surfeur est au notre super programmeur déceleur de bug.",
+      "description": "Ce triple beau-gosse au profil de surfeur est notre super programmeur déceleur de bugs.",
       "game" : "Road 96"
     },
     {

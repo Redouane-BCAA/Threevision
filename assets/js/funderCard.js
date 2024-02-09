@@ -26,12 +26,25 @@ export function createMemberCard(member) {
 
   const txtDiv = document.createElement("div");
   txtDiv.classList.add("funder_card_txt");
+
   const nameHeader = document.createElement("h4");
   nameHeader.textContent = member.name;
+  const linkedinLink = document.createElement("a");
+  linkedinLink.href = member.linkedin; 
+  linkedinLink.target = "_blank"; 
+  const linkedinLogo = document.createElement("img");
+  linkedinLogo.src = "../assets/images/linked-in-logo.svg"; 
+  linkedinLogo.alt = "Logo LinkedIn";
+  linkedinLogo.classList.add("linkedin-logo");
+  linkedinLink.appendChild(linkedinLogo);
+  nameHeader.appendChild(linkedinLink);
+
   const roleParagraph = document.createElement("p");
   roleParagraph.textContent = member.role;
+
   const descriptionParagraph = document.createElement("p");
   descriptionParagraph.textContent = member.description;
+
   txtDiv.appendChild(nameHeader);
   txtDiv.appendChild(roleParagraph);
   txtDiv.appendChild(descriptionParagraph);

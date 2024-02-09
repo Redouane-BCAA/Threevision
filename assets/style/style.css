@@ -789,6 +789,7 @@ span.orange {
 section.funder {
   position: relative;
   overflow: hidden;
+  padding: 70px 0;
 }
 
 .funder::before {
@@ -806,7 +807,7 @@ section.funder {
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  padding: 40px 0;
+  padding-bottom: 40px;
   width: 80%;
 }
 .funder_team h3 {
@@ -823,6 +824,11 @@ section.funder {
 .funder_card {
   display: flex;
   gap: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--blue);
+}
+.funder_cards_container :last-child {
+  border: none;
 }
 .funder_card_txt {
   display: flex;
@@ -832,6 +838,16 @@ section.funder {
 .funder_card_txt h4 {
   font-size: 24px;
   font-weight: var(--font-bold);
+  text-transform: uppercase;
+}
+.linkedin-logo{
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+  transition: all 0.3s ease;
+}
+.linkedin-logo:hover{
+  transform: scale(1.1);
 }
 .funder_card_txt :nth-child(2) {
   font-size: 20px;
@@ -1487,6 +1503,9 @@ section.funder {
   .presentation_funder {
     padding: 20px 0;
   }
+  .presentation_content_txt {
+    font-size: 20px;
+  }
   .presentation_funder :nth-child(1) {
     width: 100%;
     padding: 0 20px;
@@ -1502,7 +1521,13 @@ section.funder {
     top: -12%;
     right: 0%;
   }
-  /* SECTION FUNDER */
+  .funder_card_txt h4 {
+    font-size: 20px;
+  }
+  .funder_card_txt :nth-child(3) {
+    font-size: 18px;
+  }
+  /* SECTION TEAM */
   .team::before {
     display: none;
   }
@@ -1511,6 +1536,7 @@ section.funder {
   }
   .funder_team {
     width: 100%;
+    padding-bottom: 0;
   }
   .team_container_title {
     padding: 20px;
