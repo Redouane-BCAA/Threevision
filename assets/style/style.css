@@ -452,11 +452,8 @@ footer {
   height: 480px;
   width: 480px;
   position: absolute;
-  top: -130px;
-  right: -100px;
-  /* animation: arriveAndGrow 2s ease forwards;
-  animation-delay: 0s;
-  opacity: 0; */
+  top: -15%;
+  right: 0%;
 }
 .mission_section .mission_container::after {
   content: "";
@@ -465,22 +462,9 @@ footer {
   height: 195px;
   width: 195px;
   position: absolute;
-  top: -90px;
-  right: -170px;
-  /* animation: arriveAndGrow 2s ease forwards;
-  animation-delay: 1s;
-  opacity: 0; */
+  top: -10%;
+  right: -5%;
 }
-
-/* @keyframes arriveAndGrow {
-  0% {
-    transform: translateY(-20%) translateX(100%) scale(0.1);
-  }
-  100% {
-    transform: translateY(0) translateX(0) scale(1);
-    opacity: 1;
-  }
-} */
 
 .mission_container h2 {
   font-size: var(--h1-font-size);
@@ -729,7 +713,7 @@ span.orange {
   background-size: cover;
   position: absolute;
   bottom: -11%;
-  left: 5%;
+  left: 3%;
   height: 671px;
   width: 398px;
 }
@@ -1353,6 +1337,9 @@ section.funder {
   .thanks_container {
     width: 70%;
   }
+  .about_container::before {
+    left: -2%;
+  }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   /* SECTION MISSION */
@@ -1398,6 +1385,7 @@ section.funder {
   .about_container::before {
     height: 335px;
     width: 195px;
+    bottom: -9%;
   }
 }
 @media screen and (max-width: 1024px) {
