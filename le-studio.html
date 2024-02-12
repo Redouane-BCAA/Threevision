@@ -40,7 +40,7 @@
     <link
       rel="shortcut icon"
       href="assets/images/threevision-logo.webp"
-      type="image/x-icon"
+      type="image/webp"
     />
     <!-- PRELOAD -->
     <link rel="preload" href="assets/images/Helak-bg.webp" as="image" />
@@ -128,17 +128,17 @@
               partage et de la confiance.
             </p>
             <img
-              src="assets/images/funder-pic.webp"
-              alt="photo des fondateurs du studio Threevision"
+              src="assets/images/team.webp"
+              alt="photo de l'équipe threevision"
               srcset="
-                assets/images/funder-pic.webp     500w,
-                assets/images/funder-pic-350.webp 375w
+                assets/images/team.webp     500w,
+                assets/images/team-375.webp 450w
               "
               sizes="(max-width: 500px) 100vw, 50vw"
             />
             <p>
-              (Photo prises 2 mois avant la création officielle du studio et un
-              rendez-vous chez le coiffeur)
+              (Premier contact avec la nature 2 ans après la création de
+              Threevision)
             </p>
           </div>
         </div>
@@ -155,12 +155,6 @@
               <!-- card funder membre récupérés dynamiquement -->
             </div>
           </div>
-          <img
-            class="funder_img"
-            src="assets/images/team.webp"
-            alt="photo de l'équipe threevision"
-            width="1206"
-          />
         </div>
       </section>
       <section class="team">
@@ -431,14 +425,84 @@
         </div>
         <div class="rights">
           <p>© 2024 Threevision. All rights reserved.</p>
-          <a
-            aria-label="lien vers la page de politique de confidentialité"
-            href=""
-            >Politique de confidentialité</a
-          >
+          <div class="footer-links-container">
+            <a
+              class="legal-notice-link"
+              aria-label="lien vers les mentions légales"
+              href=""
+              >Mentions légales</a
+            >
+            <a
+              class="privacy-link"
+              aria-label="lien vers la page de politique de confidentialité"
+              href=""
+              >Politique de confidentialité</a
+            >
+            <a
+              class="cgu-link"
+              aria-label="lien vers les conditions générales d'utilisation"
+              href=""
+              >CGU</a
+            >
+          </div>
         </div>
       </div>
     </footer>
+    <!--********* modal Privacy Policy *********-->
+    <div id="modal-privacy" class="modal">
+      <div class="modal-content modal-content-privacy">
+        <h2>Politique de confidentialité</h2>
+        <span class="close">X</span>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+          facilis? Dolorem facilis delectus quos in et repellat ratione, est
+          quasi architecto saepe. Amet obcaecati fuga aperiam nisi pariatur
+          cupiditate nobis!
+          <br />
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga eius
+          nostrum optio quasi inventore mollitia consequatur quam cum, minima
+          sed quo voluptatum, aliquid blanditiis impedit est dolore error
+          distinctio magni?
+        </p>
+      </div>
+    </div>
+    <!--********* modal CGV *********-->
+    <div id="modal-cgu" class="modal">
+      <div class="modal-content modal-content-cgu">
+        <h2>Conditions générales d'utilisation'</h2>
+        <span class="close">X</span>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+          facilis? Dolorem facilis delectus quos in et repellat ratione, est
+          quasi architecto saepe. Amet obcaecati fuga aperiam nisi pariatur
+          cupiditate nobis!
+          <br />
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga eius
+          nostrum optio quasi inventore mollitia consequatur quam cum, minima
+          sed quo voluptatum, aliquid blanditiis impedit est dolore error
+          distinctio magni?
+        </p>
+      </div>
+    </div>
+    <!--********* modal legals-notices *********-->
+    <div id="modal-legal-notice" class="modal">
+      <div class="modal-content modal-content-legal-notice">
+        <h2>Mentions légales</h2>
+        <span class="close">X</span>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+          facilis? Dolorem facilis delectus quos in et repellat ratione, est
+          quasi architecto saepe. Amet obcaecati fuga aperiam nisi pariatur
+          cupiditate nobis!
+          <br />
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga eius
+          nostrum optio quasi inventore mollitia consequatur quam cum, minima
+          sed quo voluptatum, aliquid blanditiis impedit est dolore error
+          distinctio magni?
+        </p>
+      </div>
+    </div>
+    <div id="backdrop" class="backdrop"></div>
     <!--********* SCROLL UP *********-->
     <a
       href="#"

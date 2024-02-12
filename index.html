@@ -40,12 +40,12 @@
     <link
       rel="shortcut icon"
       href="assets/images/threevision-logo.webp"
-      type="image/x-icon"
+      type="image/webp"
     />
     <!-- PRELOAD -->
     <link rel="preload" href="assets/images/war-bg.webp" as="image" />
     <link rel="preload" href="assets/images/cave-bg.webp" as="image" />
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <!-- CSS -->
     <link rel="stylesheet" href="assets/style/style.css" />
     <!-- JS -->
@@ -280,7 +280,12 @@
       <div class="ctn footer_container">
         <div class="contact-menu" id="contact">
           <div class="contact">
-            <img src="assets/images/threevision-logo-white.webp" alt="logo threevision" width="190" height="33" />
+            <img
+              src="assets/images/threevision-logo-white.webp"
+              alt="logo threevision"
+              width="190"
+              height="33"
+            />
             <p>Pour nous conctactez :</p>
             <a href="mailto:contact@threevisionsas.com"
               >contact@threevisionsas.com</a
@@ -312,14 +317,84 @@
         </div>
         <div class="rights">
           <p>© 2024 Threevision. All rights reserved.</p>
-          <a
-            aria-label="lien vers la page de politique de confidentialité"
-            href=""
-            >Politique de confidentialité</a
-          >
+          <div class="footer-links-container">
+            <a
+              class="privacy-link"
+              aria-label="lien vers la page de politique de confidentialité"
+              href=""
+              >Politique de confidentialité</a
+            >
+            <a
+              class="cgu-link"
+              aria-label="lien vers les conditions générales d'utilisation"
+              href=""
+              >Conditions générales d'utilisation</a
+            >
+            <a
+              class="legal-notice-link"
+              aria-label="lien vers les mentions légales"
+              href=""
+              >Mentions légales</a
+            >
+          </div>
         </div>
       </div>
     </footer>
+    <!--********* modal Privacy Policy *********-->
+    <div id="modal-privacy" class="modal">
+      <div class="modal-content modal-content-privacy">
+        <h2>Politique de confidentialité</h2>
+        <span class="close">X</span>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+          facilis? Dolorem facilis delectus quos in et repellat ratione, est
+          quasi architecto saepe. Amet obcaecati fuga aperiam nisi pariatur
+          cupiditate nobis!
+          <br />
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga eius
+          nostrum optio quasi inventore mollitia consequatur quam cum, minima
+          sed quo voluptatum, aliquid blanditiis impedit est dolore error
+          distinctio magni?
+        </p>
+      </div>
+    </div>
+    <!--********* modal CGV *********-->
+    <div id="modal-cgu" class="modal">
+      <div class="modal-content modal-content-cgv">
+        <h2>Conditions générales de vente</h2>
+        <span class="close">X</span>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+          facilis? Dolorem facilis delectus quos in et repellat ratione, est
+          quasi architecto saepe. Amet obcaecati fuga aperiam nisi pariatur
+          cupiditate nobis!
+          <br />
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga eius
+          nostrum optio quasi inventore mollitia consequatur quam cum, minima
+          sed quo voluptatum, aliquid blanditiis impedit est dolore error
+          distinctio magni?
+        </p>
+      </div>
+    </div>
+    <!--********* modal Legal Notice *********-->
+    <div id="modal-legal-notice" class="modal">
+      <div class="modal-content modal-content-cgv">
+        <h2>Conditions générales de vente</h2>
+        <span class="close">X</span>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+          facilis? Dolorem facilis delectus quos in et repellat ratione, est
+          quasi architecto saepe. Amet obcaecati fuga aperiam nisi pariatur
+          cupiditate nobis!
+          <br />
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga eius
+          nostrum optio quasi inventore mollitia consequatur quam cum, minima
+          sed quo voluptatum, aliquid blanditiis impedit est dolore error
+          distinctio magni?
+        </p>
+      </div>
+    </div>
+    <div id="backdrop" class="backdrop"></div>
     <!--********* SCROLL UP *********-->
     <a
       href="#"
