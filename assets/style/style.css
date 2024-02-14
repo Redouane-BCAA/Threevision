@@ -216,6 +216,8 @@ footer {
   position: fixed;
   top: 50%;
   left: 50%;
+  height: 50%;
+  overflow: scroll;
   transform: translate(-50%, -50%);
   background-color: white;
   padding: 20px;
@@ -237,6 +239,15 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+.modal-content h4 {
+  font-size: 20px;
+  font-weight: var(--font-bold);
+}
+.modal-content a{
+  color: var(--blue);
+  font-weight: var(--font-bold);
+
 }
 .modal-content-title {
   display: flex;
